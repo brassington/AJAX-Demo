@@ -85,9 +85,9 @@ var getAjax = function () {
             nameArray = [];
             for (var id in data) {
                 //data[x].id = x;
-                data[x].editButton = "<button onclick='updateAjax(\"" + x + "\")'>Edit</button>";
-                data[x].deleteButton = "<button onclick='deleteAjax(\"" + x + "\")'>Delete</button>";
-                nameArray.push(data[x]);
+                data[id].editButton = "<button onclick='updateAjax(\"" + id + "\")'>Edit</button>";
+                data[id].deleteButton = "<button onclick='deleteAjax(\"" + id + "\")'>Delete</button>";
+                nameArray.push(data[id]);
             }
             //Call Output Table function
             outputTable();
